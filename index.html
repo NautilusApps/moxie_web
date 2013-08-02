@@ -1,103 +1,173 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Moxie iPhone App- Create and Share Photo Filters</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Moxie</title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width">
-	<link rel="shortcut icon" href="favicon.ico">
-	<script type="text/javascript" src="js/jquery-1.9.1.min.js" ></script>
-	<script type="text/javascript" src="js/froogaloop.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script type="text/javascript" src="js/script.js"></script>
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-	<!-- Google analytics. Update the UA# to your own tracking info -->
-	<script type="text/javascript">
-
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-40198358-1']);
-	  _gaq.push(['_trackPageview']);
-
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-
-	</script>
-	
-	
-</head>
-
-<body>
-
-<!--embedded video modal - just update the iframe src if you want to add a new video-->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+    <!--embedded video modal - just update the iframe src if you want to add a new video-->
 <div id="modal" class="modal-hide">
-	<div class="modal-bg">
-	</div>
-	<div class="video-embed">
-		<iframe src="http://player.vimeo.com/video/61738115?api=1" class="vim" width="700" height="489" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-	</div>
+    <div class="modal-bg">
+    </div>
+    <div class="video-embed">
+        <video width="640" height="360" controls>
+          <source src="media/moxie-video.mp4" type="video/mp4">
+          <source src="media/moxie-video.ogg" type="video/ogg">
+          <source src="media/moxie-video.webm" type="video/webm">
+        </video>
+
+        <!--<object width="640" height="360"><param name="movie" value="//www.youtube.com/v/m_c0S_q9B_8?version=3&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/m_c0S_q9B_8?version=3&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" width="640" height="360" allowscriptaccess="always" allowfullscreen="true"></embed></object>-->
+    </div>
 </div>
 
-<footer>
-<!-- social icons - add links and just uncomment when you need them -->
-	<div class="social-container">
-		<a href="https://twitter.com/moxieapp" target="_blank" title="twitter"><div class="social-icon twitter-icon"></div></a>
-		<a href="https://www.facebook.com/pages/Moxie/144035062430523"><div class="social-icon facebook-icon" title="facebook"></div></a>
-		<a href="http://moxienow.tumblr.com"><div class="social-icon tumblr-icon" title="tumblr"></div></a>
-	</div>
-</footer>
+    
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
 
-<header>
-	<div class="moxie-header">
-		<img src="images/moxie-icon.png" border="0" />
-		<h1>Meet<br /><span>Moxie</span></h1>
-	</div>
-</header>
+
+        <!-- social icons - add links and just uncomment when you need them -->
+    <div class="social-container">
+        <a href="https://twitter.com/moxieapp" target="_blank" title="twitter"><div class="social-icon twitter-icon"></div></a>
+        <a href="https://www.facebook.com/pages/Moxie/144035062430523"><div class="social-icon facebook-icon" title="facebook"></div></a>
+        <a href="http://instagram.com/moxieapp"><div class="social-icon instagram-icon" title="instagram"></div></a>
+        <a href="http://moxienow.tumblr.com/"><div class="social-icon tumblr-icon" title="tumblr"></div></a>
+    </div>
 
 
 
-<section class="feature">
-	<div class="feature-group">
-		<div class="moxie-iphone">
-		
-		<!-- for updating the screenshot, just drop a new screenshot file called screenshot.png in the images folder and you should be good to go-->
-		
-			<img src="images/screenshot.png" class="screenshot" border="0" />
-			<!-- <div class="play-btn"></div> -->
-		</div>
-		<div class="feature-text">
-			<h2>Moxie lets you create and share your own photo filters</h2>
-			<p>Moxie is a place where you can create and share photo filters. Reuse what others create or make your own from scratch!</p>
-		</div>
-	</div>
-</section>
+        <!-- Add your site or application content here -->
+        <header>
+            <div class="l-header">
+                <img src="img/icn-moxie.png" border="0" class="l-img-left img-moxie" />
+                <div class="l-text-right">
+                    <h1>Meet<br />
+                    <span>Moxie</span></h1>
+                </div>
+            </div>
+        </header>
+        
+        <section class="main">
+            <div class="l-main">
+                <img src="img/home-hand-phone.png" border="0" class="l-img-left" />
+                <div class="l-text-right main-text">
+                <h2>Moxie lets you create and share your own photo filters</h2>
 
-<section class="video-section">
-	<!-- <div class="play-btn"></div> -->
-</section>
+                <!-- <a href="#"><img src="img/btn-appstore.png" class="btn-appstore" border="0" /></a> -->
 
-<section class="signup-section">
-	<div class="signup-group">
-	<h2>Want the inside scoop?</h2>
-	<p>Sign up now to get advanced notice and become one of our private beta testers.</p>
-	
-	<!-- Put your google form info here. should already be linked up to a form-->
-	<form action="https://docs.google.com/forms/d/1RVm7gZdFe-tybMxC7CHkWQpwegk9mBc7HEo8zsWXmBc/formResponse" method="POST" id="ss-form" target="_self" onsubmit="" class="signup-form">
-		<input type="text" name="entry.1004161390" value="" class="ss-q-short signup-field" placeholder="ENTER YOUR EMAIL" id="entry_1004161390" dir="auto" aria-required="true">
-		<input type="hidden" name="draftResponse" value="[]
-		">
-		<input type="hidden" name="pageHistory" value="0">
-		<input type="submit" class="signup-btn" name="submit" value="Keep me updated" id="ss-submit">
-	</form>
-	<p class="small">We promise we won’t spam you. We hate spam just as much as you.</p>
-	</div>
-</section>
+                </div>
+            </div>
+        </section>
+        
+        <section class="testimonials">
+            <div class="l-testimonials">
+                <div class="testimonial">
+                    "Amazing little app!"
+                    <br />
+                    <span>Moxie user puredecim8ion</span>
+                </div>
+                <div class="testimonial">
+                    "An instant hit! Blending and adding<br />
+                    images has never been so easy."
+                    <br />
+                    <span>Moxie user destroy2cr8</span>
+                </div>
+                <div class="testimonial">
+                    "A real delight"
+                    <br />
+                    <span>Moxie user lisa_cat</span>
+                </div>
+            </div>
+        </section>
+        
+        <section class="video">
+            <a href="#" class="play-btn"><img src="img/btn-video.jpg" border="0" class="play-btn video-holder" /><img src="img/btn-video-small.jpg" border="0" class="video-holder-small" /></a>
+        </section>
+        
+        <section class="feature-create">
+            <div class="l-feature-create">
+                <img src="img/section-create.jpg" class="l-img-left feature-create-img" border="0" />
+                <div class="l-text-right create-text">
+                    <h3>Create something 
+                    completely unique</h3>
+                    <p>With Moxie, it's super easy to create your own photo filters completely from scratch. Choose from over 150 textures, or use your own photos to create a truly unique filter.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="feature-discover">
+            <div class="l-feature-discover">
+                <div class="feature-text">
+                    <h3>Reuse anyone's filters</h3>
+                    <p>Discover and see what others have created. Reuse and modify anyone's filters to make your own photos a work of art.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="about">
+            <div class="l-about">
+            <h3 class="about-title">Brought to you by...</h3>
+                <div class="profile">
+                    <img src="img/kyle.jpg" border="0" />
+                    <h3>Kyle</h3>
+                    <span>Development<br />
+                    <a href="https://twitter.com/KyleRStewart">@KyleRStewart</a></span>
+                </div>
+                <div class="profile">
+                    <img src="img/suzy.jpg" border="0" />
+                    <h3>Suzy</h3>
+                    <span>Marketing<br />
+                    <a href="https://twitter.com/SuzyChaves">@SuzyChaves</a></span>
+                </div>
+                <div class="profile">
+                    <img src="img/todd.jpg" border="0" />
+                    <h3>Todd</h3>
+                    <span>Design<br />
+                    <a href="https://twitter.com/toddscheuring">@ToddScheuring</a></span>
+                </div>
+            </div>
+        </section>
+        
+        <section class="appstore">
 
+            <!-- <a href="#"><img src="img/btn-appstore.png" border="0" /></a> -->
+            
+        </section>
+        
+        <footer>
+            <nav>
+                <ul>
+                    <!--<li><a href="#">Press kit</a></li>-->
+                    <li><a href="mailto:moxie@invntapps.com">Contact</a></li>
+                </ul>
+            </nav>
+            <br />
+            <p class="copyright">&#169; 2013 Moxie, All rights reserved</p>
+        </footer>
 
-</body>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
 
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
 </html>
