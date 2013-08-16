@@ -18,7 +18,19 @@
     </head>
     <body>
     <!--embedded video modal - just update the iframe src if you want to add a new video-->
+<div id="modal" class="modal-hide">
+    <div class="modal-bg">
+    </div>
+    <div class="video-embed">
+        <video width="640" height="360" controls>
+          <source src="media/moxie-video.mp4" type="video/mp4">
+          <source src="media/moxie-video.ogg" type="video/ogg">
+          <source src="media/moxie-video.webm" type="video/webm">
+        </video>
 
+        <!--<object width="640" height="360"><param name="movie" value="//www.youtube.com/v/m_c0S_q9B_8?version=3&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/m_c0S_q9B_8?version=3&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" width="640" height="360" allowscriptaccess="always" allowfullscreen="true"></embed></object>-->
+    </div>
+</div>
 
     
         <!--[if lt IE 7]>
