@@ -371,6 +371,9 @@ section.video .video-embed {
   padding: 40px 0;
   text-align: center;
 }
+.appstore-btn {
+  display: inline-block;
+}
 /*-------- social icons ----------*/
 .social-container {
   background: #252525;
