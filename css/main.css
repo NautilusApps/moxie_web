@@ -411,13 +411,6 @@ section.video .video-embed {
 .instagram-icon {
   background: url('../img/instagram-icon.png');
 }
-.appstore-btn {
-  width: 280px;
-  height: 96px;
-  display: inline-block;
-  cursor: pointer;
-  background: url('../img/btn-appstore.png');
-}
 /* ==========================================================================
    Footer
    ========================================================================== */
@@ -556,7 +549,6 @@ footer p {
   }
   .appstore-btn {
     display: inline-block;
-    margin-bottom: 20px;
   }
   .hide-small {
     display: none;
