@@ -550,6 +550,9 @@ footer p {
   .appstore-btn {
     display: inline-block;
   }
+  .hide-small {
+    display: none;
+  }
   header .l-header {
     width: 260px;
   }
