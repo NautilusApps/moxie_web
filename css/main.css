@@ -411,6 +411,13 @@ section.video .video-embed {
 .instagram-icon {
   background: url('../img/instagram-icon.png');
 }
+.appstore-btn {
+  width: 280px;
+  height: 96px;
+  display: inline-block;
+  cursor: pointer;
+  background: url('../img/btn-appstore.png');
+}
 /* ==========================================================================
    Footer
    ========================================================================== */
@@ -503,9 +510,6 @@ footer p {
 .invisible {
   visibility: hidden;
 }
-.hide-large {
-  display: none;
-}
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    Theses examples override the primary ('mobile first') styles.
@@ -542,12 +546,6 @@ footer p {
   }
 }
 @media only screen and (max-width: 550px) {
-  .hide-large {
-    display: inline-block;
-    float: left;
-    padding: 20px;
-    margin-top: 10px;
-  }
   .appstore-btn:after {
     content: ".";
     display: block;
@@ -558,6 +556,7 @@ footer p {
   }
   .appstore-btn {
     display: inline-block;
+    margin-bottom: 20px;
   }
   .hide-small {
     display: none;
