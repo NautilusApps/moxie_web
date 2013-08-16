@@ -372,7 +372,7 @@ section.video .video-embed {
   text-align: center;
 }
 .appstore-btn {
-  display: inline-block;
+  display: block;
 }
 /*-------- social icons ----------*/
 .social-container {
@@ -539,6 +539,17 @@ footer p {
   }
 }
 @media only screen and (max-width: 550px) {
+  .appstore-btn:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+  .appstore-btn {
+    display: inline-block;
+  }
   header .l-header {
     width: 260px;
   }

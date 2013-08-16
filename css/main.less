@@ -464,7 +464,7 @@ section.video {
 }
 
 .appstore-btn {
-    display: inline-block;
+    display: block;
 }
 
 /*-------- social icons ----------*/
@@ -670,6 +670,21 @@ footer {
 }
 
 @media only screen and (max-width: 550px) {
+
+
+.appstore-btn:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+ 
+.appstore-btn {
+    display: inline-block;
+}
+
 
     header{
    .l-header {
