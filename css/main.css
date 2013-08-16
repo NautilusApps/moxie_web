@@ -121,7 +121,6 @@ textarea {
 }
 /*-------- video modal ----------*/
 #modal {
-  display: block;
   transition: all 700ms;
   -webkit-transition: all 700ms;
   /* Safari */
