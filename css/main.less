@@ -619,6 +619,9 @@ footer {
     visibility: hidden;
 }
 
+.hide-large {
+        display: none;
+    }
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -668,9 +671,7 @@ footer {
         }
     }
 
-    .hide-large {
-        display: none;
-    }
+    
 }
 
 @media only screen and (max-width: 550px) {
@@ -678,6 +679,9 @@ footer {
 
 .hide-large {
         display: inline-block;
+        float: left;
+        padding: 20px;
+        margin-top: 10px;
     }
 
 .appstore-btn:after {
