@@ -1,0 +1,63 @@
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: helvetica, arial, sans-serif;
+}
+header {
+  background: #481571;
+  height: 63px;
+  padding: 0px;
+  margin: 0px;
+  box-shadow: inset 0 -10px 10px -2px #2a123c;
+}
+header .moxie-icon {
+  float: left;
+  background: url(../img/public/moxie-icon-mobile.png) -30px 0px no-repeat;
+  background-size: auto 70px;
+  height: 63px;
+  width: 170px;
+}
+header .appstore-btn {
+  float: right;
+}
+header .appstore-btn img {
+  width: 113px;
+  margin-top: 11px;
+  margin-right: 8px;
+}
+.meta {
+  text-align: center;
+}
+.meta .title {
+  padding: 13px 10px;
+  font-size: 21px;
+  font-weight: 100;
+}
+.meta .owner {
+  padding: 0 0 10px 10px;
+  font-size: 13px;
+}
+.the-goods {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+.the-goods img {
+  max-width: 100%;
+}
+@media only screen and (min-width: 550px) {
+  header {
+    height: 84px;
+  }
+  header .moxie-icon {
+    background: url(../img/public/moxie-icon-mobile.png) 0px 0px no-repeat;
+    background-size: auto 84px;
+    height: 84px;
+    width: 253px;
+    margin-left: 10px;
+  }
+  header .appstore-btn img {
+    width: 171px;
+  }
+}

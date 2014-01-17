@@ -161,15 +161,21 @@ textarea {
 /*-------- video modal ----------*/
 
 #modal {
+    display: block;
     transition: all 700ms;
     -webkit-transition: all 700ms; /* Safari */
-    position: fixed;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
 }
 
 .modal-hide {
     z-index: -10;
     opacity: 0;
-    display: none;
 }
 
 .modal-show {
@@ -186,25 +192,37 @@ textarea {
     z-index: 10;
 }
 
+
 .video-embed {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    margin-top: 1em;
+
+    iframe {
+        position: absolute;
         z-index: 50;
-        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/*.video-embed {
+        z-index: 50;
+        position: absolute;
         left:50%;
         top:50%;
-        margin-left: -320px;
-        margin-top: -180px;
+        margin-left: -352px;
+        margin-top: -250px;
         background: #000;
         max-width: 100%;
         -moz-box-shadow:    0px 2px 15px 0px rgba(0,0,0,0.8);
         -webkit-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.8);
          box-shadow:         0px 2px 15px 0px rgba(0,0,0,0.8);
-    }
-
-.video-inside {
-    max-width: 560px;
-    position: relative;
-}
-
+    }*/
 
 /*.video-embed {
     position: relative;
@@ -463,9 +481,6 @@ section.video {
     text-align: center;
 }
 
-.appstore-btn {
-    display: block;
-}
 
 /*-------- social icons ----------*/
 
@@ -507,8 +522,6 @@ section.video {
 .instagram-icon {
     background: url('../img/instagram-icon.png');
 }
-
-
 
 
 
@@ -669,30 +682,9 @@ footer {
             width: 115px;
         }
     }
-
-    
 }
 
 @media only screen and (max-width: 550px) {
-
-
-.appstore-btn:after {
-    content: ".";
-    display: block;
-    clear: both;
-    visibility: hidden;
-    line-height: 0;
-    height: 0;
-}
- 
-.appstore-btn {
-    display: inline-block;
-}
-
-.hide-small {
-    display: none;
-}
-
 
     header{
    .l-header {
